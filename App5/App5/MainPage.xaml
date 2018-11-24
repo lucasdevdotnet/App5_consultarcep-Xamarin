@@ -4,9 +4,13 @@
              xmlns:local="clr-namespace:App5"
              x:Class="App5.MainPage">
 
-    <StackLayout>
+    <StackLayout BackgroundColor="Yellow" Padding="30" Spacing="30">
+        <Image Source="logo.png" x:Name="Logo"/>
+        <Entry Placeholder="Digite o cep" PlaceholderColor="#FFBF00" BackgroundColor="#FFFFFF"  x:Name="CEP"/>
+        <Button Text="Buscar Cep" TextColor="#FFFFFF" BackgroundColor="#00416b" x:Name="BOTAO"/>
+
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
+        <Label Text="" x:Name="RESULT"
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
     </StackLayout>

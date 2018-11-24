@@ -1,6 +1,8 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using App5.Servicos.Modelo;
+using App5.Servicos;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace App5
@@ -10,7 +12,7 @@ namespace App5
         public App()
         {
             InitializeComponent();
-
+          
             MainPage = new MainPage();
         }
 

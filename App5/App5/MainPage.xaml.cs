@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using Xamarin.Forms;
+using App5.Servicos.Modelo;
+using App5.Servicos;
 
 namespace App5
 {
@@ -12,6 +11,41 @@ namespace App5
         public MainPage()
         {
             InitializeComponent();
+            BOTAO.Clicked += BuscarCep;
+        }
+
+        private void BuscarCep(object sender, EventArgs args)
+        {
+
+            // Todo logica do programa.
+
+            //  validações 
+            string cep = CEP.Text.Trim(); //  trim  remove os espaçoes 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Endereco end =  ViaCepServico.BuscarEnderecoViaCep(cep);
+            RESULT.Text =  string.("Endereco {0} " + end.bairro); 
+
+
+
         }
     }
 }
