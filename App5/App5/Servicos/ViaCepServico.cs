@@ -18,6 +18,10 @@ namespace App5.Servicos
             WebClient wc =  new WebClient();
           string conteudo =  wc.DownloadString(NovoEnderecoUrl);
             Endereco end = JsonConvert.DeserializeObject<Endereco>(conteudo);
+            if(end.cep == null)
+            {
+                return null;
+            }
             return end;
         }
 
