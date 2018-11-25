@@ -13,12 +13,9 @@ namespace App5
             InitializeComponent();
             BOTAO.Clicked += BuscarCep;
         }
-
         private void BuscarCep(object sender, EventArgs args)
         {
-
             // Todo logica do programa.
-
             //  validações 
             string cep = CEP.Text.Trim(); //  trim  remove os espaçoes 
 
@@ -35,14 +32,11 @@ namespace App5
                     {
                         DisplayAlert("ERRO", "O endereço nao foi encontrado para o cep informado", "OK");
                     }
-                    
                 }
                 catch (Exception e)
                 {
                     DisplayAlert("ERRO CRÍTICO", e.Message, "OK");
-
                 }
-
             }
         } 
             private bool isValidarCep( string cep)
